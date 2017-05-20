@@ -1,5 +1,4 @@
 var has = require("@nathanfaucett/has"),
-    isPrimitive = require("@nathanfaucett/is_primitive"),
     isArrayLike = require("@nathanfaucett/is_array_like"),
     isObject = require("@nathanfaucett/is_object");
 
@@ -8,8 +7,8 @@ module.exports = shallowEquals;
 
 
 function shallowEquals(a, b) {
-    if (isPrimitive(a) && isPrimitive(b)) {
-        return a === b;
+    if (a === b) {
+        return true;
     } else if (isArrayLike(a) && isArrayLike(b)) {
         return shallowEqualsArray(a, b);
     } else if (isObject(a) && isObject(b)) {

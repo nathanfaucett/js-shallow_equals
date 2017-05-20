@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/shallow_equals",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "shallow check for equality",
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
   "dependencies": {
     "@nathanfaucett/has": "^0.0.2",
     "@nathanfaucett/is_array_like": "^0.0.2",
-    "@nathanfaucett/is_object": "^0.0.1",
-    "@nathanfaucett/is_primitive": "^0.0.2"
+    "@nathanfaucett/is_object": "^0.0.1"
   }
 }
